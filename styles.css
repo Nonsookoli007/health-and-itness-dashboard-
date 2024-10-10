@@ -1,0 +1,104 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 30px  0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    margin: auto 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 80%; /* Make the inputs full width */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 30%; */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.activity-list {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.summary p {
+    font-size: 18px;
+}
+
+canvas {
+    margin-top: 20px;
+    width: 100%; /* Make canvas responsive */
+    max-width: 100%;
+    height: auto; /* Ensure the height adjusts accordingly */
+}
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .summary p {
+        font-size: 16px; /* Smaller text for summary on mobile */
+    }
+}
